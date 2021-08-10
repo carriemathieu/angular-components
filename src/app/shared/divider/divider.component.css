@@ -1,0 +1,5 @@
+/* omits first element (first element does not need a top margin) */
+:host:not(:first-of-type) {
+    display: block;
+    margin-top: 20px;
+}
