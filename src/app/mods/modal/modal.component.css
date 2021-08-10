@@ -1,0 +1,13 @@
+/* class actions, no children */
+.actions:empty {
+    display: none;
+} 
+
+.actions-default {
+    display: none;
+}
+
+/* if we find element w/ class actions & empty, & sibling element has class "actions default", show actions default */
+.actions:empty + .actions-default {
+    display: block;
+}
